@@ -40,3 +40,8 @@ function handleCellClick(clickedCellEvent) {
   handleCellPlayed(clickedCell, clickedCellIndex);
   handleResultValidation();
 }
+
+function handleCellPlayed(clickedCell, clickedCellIndex) {
+  gameState[clickedCellIndex] = currentPlayer;
+  clickedCell.innerHTML = currentPlayer;
+}
