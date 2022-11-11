@@ -79,3 +79,12 @@ if (roundWon) {
 }
   }
 }
+
+let roundDraw = !gameState.includes("");
+if (roundDraw) {
+  statusDisplay.innerHTML = drawMessage();
+  gameActive = false;
+  return;
+}
+
+handlePlayerChange();
